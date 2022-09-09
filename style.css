@@ -1,0 +1,123 @@
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    body {
+                                        /* background: #3b3f48; */
+                                        background-color: #05070c;
+                                    }
+                                    
+                                    h2 {
+                                        text-align: center;
+                                        margin: auto;
+                                        color: rgb(93, 132, 192);
+                                        font-weight: bold;
+                                        font-style: italic;
+                                        padding-top: 2rem;
+                                        font-family: Arial, Helvetica, sans-serif;
+                                    }
+                                    
+                                    .calculator {
+                                        width: 370px;
+                                        color: beige;
+                                        position: absolute;
+                                        top: 50%;
+                                        /* This pushes the container 50% away from the top of the screen */
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        /*This  keeps the container/calculator at the center of the screen */
+                                        overflow: hidden;
+                                        border-radius: 10px;
+                                        padding: 1rem;
+                                        font-weight: bold;
+                                        box-shadow: 3px 3px 3px rgb(43, 42, 148), -3px -3px 3px rgb(45, 125, 179);
+                                    }
+                                    
+                                    .output {
+                                        font-size: 3.4em;
+                                        text-align: right;
+                                        padding-top: 1.5rem;
+                                        padding-bottom: 1rem;
+                                        padding-right: 1rem;
+                                        margin-bottom: 1.5rem;
+                                        width: 100%;
+                                        /* Use width to bring out the full field width else some text or part might be missing */
+                                        border: none;
+                                        display: block;
+                                        outline: none;
+                                        background-color: transparent;
+                                        color: aliceblue;
+                                        box-shadow: inset 3px 3px 3px rgb(39, 37, 112), inset -3px -3px 3px rgb(67, 154, 189);
+                                    }
+                                    
+                                    .keys {
+                                        display: grid;
+                                        /* This makes the buttons to be display in a grid format*/
+                                        grid-template-columns: repeat(4, 2fr);
+                                        /* repeat the grid columns and arranges them according to the values given */
+                                        grid-gap: 3px;
+                                        /*Puts a gap in between the grids */
+                                    }
+                                    
+                                    .key {
+                                        background-color: #345196;
+                                        border: none;
+                                        font-size: 1.5rem;
+                                        color: rgb(87, 129, 165);
+                                        width: 70px;
+                                        height: 70px;
+                                        margin: 0.5rem;
+                                        cursor: pointer;
+                                        border-radius: 30px;
+                                        color: rgb(7, 7, 7);
+                                        box-shadow: 3px 3px 3px #4a5b9c, -3px -3px 3px #44a1ad;
+                                    }
+                                    
+                                    .key:active,
+                                    .key:focus {
+                                        background-color: #57a0a0;
+                                        box-shadow: 3px 3px 3px rgb(90, 102, 158), -3px -3px 3px rgb(41, 118, 153);
+                                    }
+                                    
+                                    .key:hover {
+                                        background-color: rgb(229, 233, 236);
+                                    }
+                                    
+                                    .key:active {
+                                        background-color: #05070c;
+                                    }
+                                    
+                                    .output:hover {
+                                        background-color: whitesmoke;
+                                    }
+                                    /* .key-op {
+                                        color: aqua;
+                                    }
+                                     */
+                                    
+                                    .key-ent {
+                                        grid-column: 4 / 5;
+                                        grid-row: 2 / span 5;
+                                        height: auto;
+                                        border-radius: 30px;
+                                        color: rgb(8, 8, 8);
+                                        background-color: #345092;
+                                    }
+                                    
+                                    .footer {
+                                        position: fixed;
+                                        padding: 3vh;
+                                        background-color: #05070c;
+                                        color: #345092;
+                                        font-weight: 20;
+                                        font-family: Arial, Helvetica, sans-serif;
+                                        width: 100%;
+                                        bottom: 0;
+                                        text-align: center;
+                                    }
+                                    
+                                    .link:hover {
+                                        color: #345092;
+                                    }
