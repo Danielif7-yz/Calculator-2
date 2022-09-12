@@ -4,17 +4,18 @@ function display(val) {
 }
 
 
-function solve() {
+function Calculate() {
     let x = document.getElementById('result').value
     let y = eval(x);
     document.getElementById('result').value = y
+        /*This code 
     return y
 }
 
 
 
-function clearScreen() {
-    document.getElementById('result').value = "";
+function clearCalcScreen() {
+    document.getElementById('result').value = "";  /*This will clear the screen */
 }
 
 function deleteNumbers(tmp) {
